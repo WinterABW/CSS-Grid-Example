@@ -1,0 +1,43 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px 200px;
+    gap: 1em;
+    grid-template-rows: minmax(auto, auto);
+}
+
+.elem1{
+    align-self: center;
+}
+.elem2{
+    align-self: end;
+}
+.elem3{
+    align-self: start;
+}
+.elem4{
+    justify-self: start;
+}
+.elem8{
+    grid-column: 1/5;
+}
+.Grid-anidado{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 1em;
+}
+
+.Grid-anidado > div{
+    border: 1px solid black;
+    background: blueviolet;
+    padding: 1em;
+}
+.grid > div{
+    background: #ecf0f1;
+    padding: 1em;
+}
+
+.grid > div:hover{
+    border: 1px solid #f1c40f;
+}
